@@ -1,8 +1,8 @@
 <div align="center">
   <h1 align="center">input-painter</h1>
   <div display="flex" align="center">
-    <img src="https://img.shields.io/crates/l/bat.svg" alt="license">
-    <a href="https://crates.io/crates/bat"><img src="https://img.shields.io/crates/v/input-painter.svg?colorB=319e8c" alt="Version info"></a>
+    <img src="https://img.shields.io/crates/l/input-painter.svg" alt="license">
+    <a href="https://crates.io/crates/input-painter"><img src="https://img.shields.io/crates/v/input-painter.svg?colorB=319e8c" alt="Version info"></a>
   </div>
   <p>a simple way to color the output of other programs</p>
 </div>
