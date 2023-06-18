@@ -21,7 +21,7 @@ The intended use of this program is for other programs to pipe into them.
 cat README.md | input-painter rgb 1 152 157
 ```
 
-You can also select any of `termcolor`'s which are listed by
+You can also select any of `termcolor`'s colors which are listed by
 ```
 input-painter --help
 ```
