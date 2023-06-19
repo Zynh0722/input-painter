@@ -10,14 +10,18 @@ use cli::Cli;
 fn main() {
     let color: Color = Cli::parse().into();
 
-    let mut stdin = io::stdin();
+    let stdin = io::stdin();
     let mut stdout = StandardStream::stdout(termcolor::ColorChoice::Auto);
 
-    stdout
-        .set_color(ColorSpec::new().set_fg(Some(color)))
-        .unwrap();
+    for line in stdin.lines() {
+        stdout
+            .set_color(ColorSpec::new().set_fg(Some(color)))
+            .unwrap();
 
-    io::copy(&mut stdin, &mut stdout).unwrap();
+        if let Ok(line) = line {
+            println!("{line}");
+        }
+    }
 
     stdout.set_color(ColorSpec::new().set_fg(None)).unwrap();
 }
